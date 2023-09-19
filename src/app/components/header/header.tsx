@@ -6,11 +6,15 @@ export function Header(){
     return(
         <div className="header">
           <div>
-            <h1>Hi, i´m Elias ! 👋</h1>
-            <h2>Software Engineer</h2>
+            <h1>Hi, guys ! 👋</h1>
+            <p>
+          I`m <b>Elias Souza</b><br></br>
+          I am 18 years old and passionate about system development.
+          I live in São Paulo and currently work in <b>web development</b>.
+          I am always open to collaborating on interesting and innovative projects.</p>
           </div>
           <Image
-            src="/meee.jpg"
+            src="/mee2.png"
             alt="Mee"
             width={325}
             height={310}
