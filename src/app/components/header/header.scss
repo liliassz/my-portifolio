@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+    gap: 24px;
+    text-align: center;
+
+    img {
+        border-radius: 100%;
+        padding: 1px;
+        max-width: 99%;
+        border: 10px solid #F47777;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 42px;
+        color: var(--text-primary);
+    }
+
+    h2 {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: var(--text-secondary);
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .header img {
+        border: 2px solid white;
+        padding: 2px;
+    }
+}

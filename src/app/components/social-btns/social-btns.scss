@@ -1,0 +1,24 @@
+.social {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.social a {
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.social a:hover {
+    background: linear-gradient( #777CF4 2.62%, #f4777777 93.38%);
+    fill-opacity: inherit;
+    transform: scale(1.1); 
+}
