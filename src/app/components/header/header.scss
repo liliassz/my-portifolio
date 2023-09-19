@@ -9,7 +9,7 @@
         padding: 4px;
         border: 5px solid #777CF4;
         margin: 0 auto;
-        transform: scale(0.9);
+        transform: scale(0.8);
         transition: all 0.3s ease;
     }
     
@@ -37,6 +37,10 @@
         p {
             max-width: 50%;
             margin: 0 auto;
+        }
+        img {
+            transform: scale(0.9);
+
         }
     }
     
