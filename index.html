@@ -47,7 +47,7 @@
         */
 
         document.addEventListener('DOMContentLoaded', () => {
-            if (iframeContainer) {
+            if (!iframeContainer) {
                 const iframe = document.createElement('iframe');
                 iframe.src = "https://my-portifolio-git-main-liliassz.vercel.app/";
                 iframe.width = "100%";
