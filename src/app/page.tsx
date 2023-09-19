@@ -14,7 +14,6 @@ export default function Home() {
         <Header/>
         <Experience/>
         <Info/>
-        <Projects />
         <div className="buttons">
           <SocialBtns/>
           <a className="btn-primary" href="mailto:elias.souza.es609@gmail.com">
@@ -22,6 +21,7 @@ export default function Home() {
             <EmailIcon/>
           </a>
         </div>
+        <Projects />
     </main>
   )
 }

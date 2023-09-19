@@ -1,21 +1,43 @@
-import { SectionTitle } from "../sectionTitle/section-title"
-import "./projects.scss"
+import { SectionTitle } from "../sectionTitle/section-title";
+import "./projects.scss";
 
-export function Projects(){
-    return(
-        <div className="">
-        <SectionTitle text="Languages"/>
-        <div className="educational-info">
-          <span><b>🇺🇸</b> English - <b>Intermediate-advanced</b></span>
-          <span><b>🇧🇷</b> Portuguese - <b>Native Speaker</b></span>
-          <span><b>🇪🇸</b> Spanhol - <b>Basic</b></span>
+export function Projects() {
+  return (
+    <div className="projects">
+      <SectionTitle text="Projects" />
+      <div className="slide-container swiper">
+        <div className="slide-content">
+          <div className="card-wrapper swiper-wrapper">
+            <div className="card swiper-slide">
+              <div className="image-content">
+                <span className="overlay"></span>
+
+                <div className="card-image">
+                  <img 
+                  className="card-img" 
+                  src="/mee2.png" 
+                  alt="aaa" />
+                </div>
+              </div>
+
+              <div className="card-content">
+                <h2 className="name">Elias Souza</h2>
+                <p className="description">
+                  The lorem text the section that contains header with having
+                  open functionality. Lorem dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+
+                <button className="button">View More</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <SectionTitle text="Education"/>
-        <div className="educational-info">
-          <span>👨‍🎓 Computer Science - <b>Udemy</b> 〡<b>1º Semester.</b> </span>
-          <span>🎓 Web Development Front-end - <b>RocketSeat</b> </span>
-          <span>🎓 Web Development Back-end - <b>Cod3r</b> </span>
-        </div>
+
+        <div className="swiper-button-next swiper-navBtn"></div>
+        <div className="swiper-button-prev swiper-navBtn"></div>
+        <div className="swiper-pagination"></div>
       </div>
-    )
+    </div>
+  );
 }
