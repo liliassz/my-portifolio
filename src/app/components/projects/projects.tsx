@@ -1,43 +1,40 @@
-import { SectionTitle } from "../sectionTitle/section-title";
-import "./projects.scss";
+
+'use client'
+import './projects.scss';
+import { SectionTitle } from "../sectionTitle/section-title"
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+import {EffectCards} from 'swiper/modules';
 
 export function Projects() {
+
   return (
-    <div className="projects">
-      <SectionTitle text="Projects" />
-      <div className="slide-container swiper">
-        <div className="slide-content">
-          <div className="card-wrapper swiper-wrapper">
-            <div className="card swiper-slide">
-              <div className="image-content">
-                <span className="overlay"></span>
+    <div className='projects'>
+      <SectionTitle text="Certificate"/>
 
-                <div className="card-image">
-                  <img 
-                  className="card-img" 
-                  src="/mee2.png" 
-                  alt="aaa" />
-                </div>
-              </div>
-
-              <div className="card-content">
-                <h2 className="name">Elias Souza</h2>
-                <p className="description">
-                  The lorem text the section that contains header with having
-                  open functionality. Lorem dolor sit amet consectetur
-                  adipisicing elit.
-                </p>
-
-                <button className="button">View More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="swiper-button-next swiper-navBtn"></div>
-        <div className="swiper-button-prev swiper-navBtn"></div>
-        <div className="swiper-pagination"></div>
-      </div>
+      <Swiper
+        effect={'cards'}
+        speed={600}
+        modules={[EffectCards]}
+        className="mySwiper"
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
     </div>
   );
 }
