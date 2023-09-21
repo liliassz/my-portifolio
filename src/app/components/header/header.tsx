@@ -16,7 +16,7 @@ export function Header(){
           <Image
             src="/mee2.png"
             alt="Mee"
-            width={325}
+            width={340}
             height={310}
             priority
           />
