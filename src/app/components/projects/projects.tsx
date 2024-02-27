@@ -13,7 +13,7 @@ import {EffectCards} from 'swiper/modules';
 
 export function Projects() {
 
-  return (
+  return ( 
     <div className='projects'>
       <SectionTitle text="Certificate"/>
 
