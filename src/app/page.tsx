@@ -9,7 +9,7 @@ import { SocialBtns } from './components/social-btns/social-btns'
 
 export default function Home() {
   return (
-    <main className="container">
+    <main className="                                         container">
         <Header/>
         <Experience/>
         <Info/>
